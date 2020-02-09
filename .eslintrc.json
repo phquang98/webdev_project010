@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended", // react is installed by react-scripts
+    "plugin:jsx-a11y/recommended", // jsx-ally is installed by react-scripts
+    "plugin:node/recommended",
+    "plugin:import/errors", // import is installed by react-scripts
+    "plugin:import/warnings",
+    "plugin:prettier/recommended" // this line must be last
+  ],
+  "plugins": [
+    "react-hooks" // this dont have plugin recommended in extends
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    // personal rule taste updated from eslint:recommended, rules with *** is added as best practice but dont come with recommended config
+    "no-unused-vars": "warn", // reduce the warning level
+    "no-var": "warn", // ***
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }], // ***
+    "spaced-comment": "error", // ***
+    "no-magic-numbers": ["error", { "ignoreArrayIndexes": true }], // ***
+    "eqeqeq": "error", // ***
+    // personal rule taste updated from plugin:node/recommended
+    "node/no-unsupported-features/es-syntax": "off", // override it as dont understand the warning atm
+    // personal rule taste for prettier
+    "prettier/prettier": "warn", // use from "plugin:prettier/recommended", but reduce level of warning
+    // add this for later learning hook
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}
