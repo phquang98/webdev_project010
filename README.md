@@ -1,6 +1,9 @@
 # Webdev Project 010
 
-A practice exercise on React Hooks.
+A practice exercise on React Hooks.\
+At the time, only finished only 2 videos about `useState()` and `useEffect()`.\
+Read `App.js` to remember how to use hooks.\
+Each branch contains code for 1 kind of hook, check branch to see what kind of hooks to relearn.
 
 ## :smile: **Getting Started/Brief Description**
 
@@ -12,10 +15,10 @@ A practice exercise on React Hooks.
 
 ## :memo: **Notes**
 
-TODO (09/02/2020):
+TODO (12/02/2020):
 
-- rewatch the 1st video
-- finish the rest
+- finish the rest of the series
+- answer question in useForm.js
 
 ## :bell: **Contributing**
 
