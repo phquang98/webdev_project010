@@ -27,7 +27,10 @@ function App() {
   // ---
   // using custom hooks to handle form input
   // pass an obj to custom hook -> form
-  const [formData, setFormData] = useForm({ email: "", password: "" });
+  const [formData, setFormData] = useForm({
+    email: "",
+    password: ""
+  });
 
   return (
     <div className="App">
@@ -79,7 +82,12 @@ function App() {
         value={formData.password}
         onChange={setFormData}
       />
-      {/*  */}
+      {/* 
+      - name prop will be used to recognise the key inside the state obj -> get the desired value
+        - name prop also will be used by custom hook to change data inside the obj state
+      - value prop will be used to access the desired value inside the obj state
+      - onChange is given to all HTML ele, and will use a func which taken from the custom hook, which is setFormValue() in file useForm.js
+      */}
     </div>
   );
 }
